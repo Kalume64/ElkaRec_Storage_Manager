@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Ajout d'une couleur de fond pour le corps de la page */
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Ajout d'un espace au-dessus du tableau pour une meilleure séparation des éléments */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Ajustement du padding pour plus de confort visuel */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333; /* Assurer que le texte dans les en-têtes est bien visible */
+}
+
+/* Styles pour les boutons pour une meilleure visibilité et interaction */
+button {
+    background-color: #4CAF50; /* Une couleur de fond plus vive pour les boutons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Ajout de bordures arrondies aux boutons */
+}
+
+button:hover {
+    background-color: #45a049; /* Un léger changement de couleur au survol */
+}
+
+/* Styles pour le modal de mise à jour */
+#statusUpdateModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1001; /* S'assure que le modal est au-dessus des autres contenus */
+    width: 300px; /* Fixe une largeur pour le modal */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ajout d'une ombre pour un effet de profondeur */
+    display: none; /* Le modal est caché par défaut */
+}
+
+/* Style pour les formulaires dans le modal pour une meilleure mise en page */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordures arrondies pour les champs de saisie et select */
+    box-sizing: border-box; /* S'assure que le padding ne change pas la largeur définie */
+}
+
+/* Ajouter des styles pour les labels pour une meilleure lisibilité */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold; /* Rendre les étiquettes en gras pour attirer l'attention */
+}
+
+th select {
+    width: 100%; /* Fait en sorte que le sélecteur occupe toute la largeur de l'en-tête */
+    margin-top: 5px; /* Ajoute un petit espace au-dessus du sélecteur */
+    font-size: small; /* Réduit la taille de la police pour mieux s'adapter à l'en-tête */
+}

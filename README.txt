@@ -1,0 +1,11 @@
+Release 1.0
+- Affichage de l'ensemble des équipements à l'ouverture de l'app
+- Filtrage par secteur ( Evènementiel, Broadcast, Informatique)
+- Filtrage par status de maintenance (Ready, A reviser, En maintenance, HS)
+- Fleche de filtre en rouge lorsque qu'un filtre est actif
+- Fermeture des menus déroulants de filtres lorsqu'on clique ailleur sur la page
+- Filtre sélectionné qui passe en rouge dans la liste
+- Bouton update status qui permet d'ouvrir une fenêtre de formulaire pour modifier le status de l'équipements
+- Description obligatoire pour submit le changement de statut (permet d'avoir un historique des évènements de maintenance de chaque équipement) => Historique stocké en base
+- Backend tu bouton Update statut non fonctionnel lors du submit /!\ NE PAS UTILISER /!\
+- Visuel retravaillé (style2.css actif)

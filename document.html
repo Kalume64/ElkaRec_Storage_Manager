@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Parc Matériel ElkaRec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <h1>Parc Matériel ElkaRec</h1>
+    <!--<select id="sectorFilter">
+        <option value="all" selected>Tous les secteurs</option>
+        <option value="Broadcast">Broadcast</option>
+        <option value="Événementiel">Événementiel</option>
+        <option value="Informatique">Informatique</option>
+    </select>
+    <select id="MaintenanceFilter">
+        <option value="all"selected>Tous les status</option>
+        <option value="Ready">Ready</option>
+        <option value="A_réviser"> A réviser</option>
+        <option value="En_Maintenance">En Maintenance</option>
+        <option value="HS">HS</option>
+    </select> -->
+    <table id="equipmentTable">
+        <thead>
+            <tr>
+                <th>TAG</th>
+                <th>Localisation</th>
+                <th>
+                    Secteur
+                    <!--<select id="sectorFilter">
+                        <option value="all" selected>Tous les secteurs</option>
+                        <option value="Broadcast">Broadcast</option>
+                        <option value="Événementiel">Événementiel</option>
+                        <option value="Informatique">Informatique</option>
+                    </select>-->
+
+                    <span class="dropdown-arrow sector-arrow">&#9662;</span>
+                    <div class="dropdown-content" id="sectorDropdown">
+                        <button data-value="all" class="selected">Tous les secteurs</button>
+                        <button data-value="Broadcast">Broadcast</button>
+                        <button data-value="Evenementiel">Événementiel</button>
+                        <button data-value="Informatique">Informatique</button>
+                    </div>
+                </th>
+                <th>Type</th>
+                <th>Constructeur</th>
+                <th>Modèle</th>
+                <th>
+                    Maintenance
+                    <!--<select id="MaintenanceFilter">
+                        <option value="all" selected>Tous les statuts</option>
+                        <option value="Ready">Ready</option>
+                        <option value="A_réviser">A réviser</option>
+                        <option value="En_Maintenance">En Maintenance</option>
+                        <option value="HS">HS</option>
+                    </select>-->
+
+                    <span class="dropdown-arrow maintenance-arrow">&#9662;</span>
+                    <div class="dropdown-content" id="maintenanceDropdown">
+                        <button data-value="all" class="selected">Tous les status</button>
+                        <button data-value="Ready">Ready</button>
+                        <button data-value="A_réviser">À réviser</button>
+                        <button data-value="En_Maintenance">En Maintenance</button>
+                        <button data-value="HS">HS</button>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <script src="filtre.js" defer></script>
+    <script src="bouton_filtre.js" defer></script>
+    <div id="statusUpdateModal" style="display:none;">
+        <!-- Le formulaire modal sera injecté ici par JavaScript -->
+    </div>
+    
+</body>
+</html>

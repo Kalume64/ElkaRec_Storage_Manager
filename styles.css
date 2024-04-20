@@ -1,0 +1,128 @@
+/* Styles généraux pour la page */
+body {
+    font-family: 'Arial', sans-serif; /* Utilisation d'une police standard claire et professionnelle */
+    background-color: #f4f4f4; /* Couleur de fond légère pour réduire la fatigue oculaire */
+    color: #333; /* Couleur de texte foncée pour un bon contraste */
+    margin: 20px; /* Ajoute un peu d'espace autour du contenu de la page */
+}
+
+/* Styles pour les en-têtes et les textes */
+h1 {
+    color: #333;
+    text-align: center; /* Centrage du titre pour un aspect plus formel */
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%; /* Utilisation de toute la largeur disponible */
+    border-collapse: collapse; /* Les bordures des cellules sont fusionnées */
+    margin-top: 20px; /* Espace au-dessus du tableau */
+    background-color: white; /* Fond blanc pour les cellules pour faciliter la lecture */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Ombre subtile pour un effet de profondeur */
+}
+
+th, td {
+    padding: 12px; /* Padding généreux pour l'espace interne */
+    border-bottom: 1px solid #ccc; /* Lignes séparatrices subtiles */
+    text-align: left; /* Alignement à gauche pour le texte */
+}
+
+th {
+    background-color: #fafafa; /* Un fond légèrement différent pour les en-têtes */
+    font-weight: normal; /* Pas de gras pour un look plus doux */
+}
+
+/* Styles pour les sélecteurs dans les en-têtes */
+th select {
+    padding: 8px;
+    border: 2px solid #ccc; /* Bordure plus visible pour le focus */
+    background: white; /* Arrière-plan blanc pour ressortir sur fond gris */
+    border-radius: 5px; /* Bordures arrondies pour une touche moderne */
+    outline: none; /* Supprime l'outline par défaut lors de la sélection */
+}
+
+th select:hover,
+th select:focus {
+    border-color: #888; /* Changement de couleur pour interaction */
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: #5c67f2; /* Une couleur bleu vif mais pas trop agressive */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a54e1; /* Assombrir le bouton au survol */
+}
+
+/* Styles pour le modal */
+#statusUpdateModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 400px;
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Test bouton fleche */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+}
+
